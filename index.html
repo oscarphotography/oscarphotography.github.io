@@ -1,146 +1,130 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1894.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; min-height: 14.0px}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oscar Bernal Photography</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #111;
+        color: #fff;
+        line-height: 1.6;
+    }
+
+    header {
+        text-align: center;
+        padding: 60px 20px;
+        background: #000;
+    }
+
+    header h1 {
+        font-size: 3em;
+        margin: 0;
+    }
+
+    header p {
+        color: #bbb;
+        margin-top: 10px;
+    }
+
+    nav {
+        text-align: center;
+        padding: 15px;
+        background: #1a1a1a;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+    }
+
+    .section {
+        padding: 50px 10%;
+    }
+
+    .section h2 {
+        border-bottom: 1px solid #444;
+        padding-bottom: 10px;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .gallery img {
+        width: 100%;
+        display: block;
+        border-radius: 6px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 40px 20px;
+        color: #888;
+        border-top: 1px solid #333;
+    }
+
+    .contact a {
+        color: #fff;
+    }
+</style>
 </head>
+
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1">&lt;title&gt;Oscar Bernal Photography&lt;/title&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>font-family: Arial, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>background: #111;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>color: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>line-height: 1.6;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>header {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>padding: 60px 20px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>background: #000;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>header h1 {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>font-size: 3em;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>header p {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>color: #bbb;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>margin-top: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>nav {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>padding: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>background: #1a1a1a;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>nav a {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>margin: 0 15px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.section {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>padding: 50px 10%;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.section h2 {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>border-bottom: 1px solid #444;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>padding-bottom: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.gallery {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>display: grid;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));</p>
-<p class="p1"><span class="Apple-converted-space">        </span>gap: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>margin-top: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.gallery img {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>border-radius: 6px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>footer {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>padding: 40px 20px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>color: #888;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>border-top: 1px solid #333;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.contact a {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>color: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1">&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;header&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Oscar Bernal Photography&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Street Photography • Wet Collodion • Analog Processes&lt;/p&gt;</p>
-<p class="p1">&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;nav&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#street"&gt;Street&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#collodion"&gt;Wet Collodion&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#portraits"&gt;Portraits&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#contact"&gt;Contact&lt;/a&gt;</p>
-<p class="p1">&lt;/nav&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section id="street" class="section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Street Photography&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="gallery"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;img src="images/street1.jpg" alt="Street photography"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;img src="images/street2.jpg" alt="Street photography"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section id="collodion" class="section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Wet Collodion&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="gallery"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;img src="images/collodion1.jpg" alt="Wet collodion"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;img src="images/collodion2.jpg" alt="Wet collodion"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section id="portraits" class="section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Portraits &amp; Fine Art&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="gallery"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;img src="images/portrait1.jpg" alt="Portrait"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;img src="images/landscape1.jpg" alt="Fine art"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section id="contact" class="section contact"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Contact&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Email: &lt;a href="mailto:tuemail@email.com"&gt;tuemail@email.com&lt;/a&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Instagram: &lt;a href="https://instagram.com/tuusuario" target="_blank"&gt;@tuusuario&lt;/a&gt;&lt;/p&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;footer&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;© 2026 Oscar Bernal Photography&lt;/p&gt;</p>
-<p class="p1">&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+<header>
+    <h1>Oscar Bernal Photography</h1>
+    <p>Street Photography • Wet Collodion • Analog Processes</p>
+</header>
+
+<nav>
+    <a href="#street">Street</a>
+    <a href="#collodion">Wet Collodion</a>
+    <a href="#portraits">Portraits</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="street" class="section">
+    <h2>Street Photography</h2>
+    <div class="gallery">
+        <img src="images/street1.jpg" alt="Street photography">
+        <img src="images/street2.jpg" alt="Street photography">
+    </div>
+</section>
+
+<section id="collodion" class="section">
+    <h2>Wet Collodion</h2>
+    <div class="gallery">
+        <img src="images/collodion1.jpg" alt="Wet collodion">
+        <img src="images/collodion2.jpg" alt="Wet collodion">
+    </div>
+</section>
+
+<section id="portraits" class="section">
+    <h2>Portraits & Fine Art</h2>
+    <div class="gallery">
+        <img src="images/portrait1.jpg" alt="Portrait">
+        <img src="images/landscape1.jpg" alt="Fine art">
+    </div>
+</section>
+
+<section id="contact" class="section contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:tuemail@email.com">tuemail@email.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/tuusuario" target="_blank">@tuusuario</a></p>
+</section>
+
+<footer>
+    <p>© 2026 Oscar Bernal Photography</p>
+</footer>
+
 </body>
 </html>
