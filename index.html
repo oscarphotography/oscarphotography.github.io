@@ -6,6 +6,73 @@
 <title>Oscar Photography</title>
 
 <style>
+
+   /* Grid de enlaces */
+.gallery-links{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:20px;
+    padding:60px 10%;
+}
+
+/* Tarjeta */
+.gallery-card{
+    position:relative;
+    overflow:hidden;
+    border-radius:6px;
+    text-decoration:none;
+}
+
+/* Imagen */
+.gallery-card img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    display:block;
+    transition:transform 0.4s ease;
+}
+
+/* Texto sobrepuesto */
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.35);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.overlay h2{
+    color:white;
+    font-size:2rem;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    border:none;
+    padding:0;
+    margin:0;
+}
+
+/* Efecto hover */
+.gallery-card:hover img{
+    transform:scale(1.05);
+}
+
+/* Responsive móvil */
+@media (max-width:768px){
+    .gallery-links{
+        grid-template-columns:1fr;
+        padding:30px 5%;
+    }
+
+    .gallery-card img{
+        height:280px;
+    }
+
+    .overlay h2{
+        font-size:1.5rem;
+    }
+}
     *{
         margin:0;
         padding:0;
