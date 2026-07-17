@@ -100,18 +100,45 @@
     }
 
     /* Foto de portada */
-    .hero{
-        width:100%;
-        height:500px;
-        overflow:hidden;
-    }
+.hero{
+    position:relative;
+    width:100%;
+    height:650px;
+    overflow:hidden;
+}
 
-    .hero img{
-        width:100%;
-        height:100%;
-        object-fit:cover;
-        display:block;
-    }
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+/* Texto sobre la portada */
+.hero-text{
+    position:absolute;
+    left:8%;
+    top:50%;
+    transform:translateY(-50%);
+    color:white;
+}
+
+.hero-text h1{
+    font-size:4rem;
+    font-weight:700;
+    letter-spacing:3px;
+    margin:0;
+    text-transform:uppercase;
+}
+
+.hero-text p{
+    font-size:1.1rem;
+    font-weight:200;
+    letter-spacing:5px;
+    margin-top:8px;
+    text-transform:uppercase;
+    opacity:0.9;
+}
 
     /* Navegación */
     nav{
@@ -163,19 +190,40 @@
         color:#888;
         border-top:1px solid #333;
     }
+   @media (max-width:768px){
+
+    .hero{
+        height:500px;
+    }
+
+    .hero-text{
+        left:6%;
+    }
+
+    .hero-text h1{
+        font-size:2.2rem;
+        letter-spacing:2px;
+    }
+
+    .hero-text p{
+        font-size:0.9rem;
+        letter-spacing:3px;
+    }
+}
 </style>
 </head>
 
 <body>
 
-<!-- Banner blanco con logo -->
-<div class="top-banner">
-    <img src="images/logo.jpg" alt="Logo" class="logo">
-</div>
 
 <!-- Foto de portada -->
 <div class="hero">
     <img src="images/cover.jpg" alt="Cover photo">
+
+    <div class="hero-text">
+        <h1>OSCAR BERNAL</h1>
+        <p>photographer</p>
+    </div>
 </div>
 
 <!-- Navegación -->
